@@ -7,7 +7,7 @@ export default function BoatNavbar() {
     <>
       <nav
         className="navbar navbar-expand-lg bg-white
-       position-fixed z-1 w-100 "
+       position-fixed z-1 top-0 w-100 "
         style={{ height: 82 }}
       >
         <div className="container-fluid d-flex gap-5">

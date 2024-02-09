@@ -1,0 +1,13 @@
+.spanBorder {
+  border-bottom: 2.5px solid rgb(185, 7, 7);
+}
+.title {
+  color: #1a2024;
+  font-size: 24px;
+  font-family: "sans-serif";
+}
+.offerImg {
+  background-image: url("./images/offerimg.webp");
+  height: 130px;
+  background-size: cover;
+}

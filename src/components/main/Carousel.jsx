@@ -9,7 +9,7 @@ export default function Carousel() {
   return (
     <>
       <div
-        className="carousel slide"
+        className="carousel slide mt-5"
         // data-bs-theme="dark"
         data-bs-ride="carousel"
         id="banners"
