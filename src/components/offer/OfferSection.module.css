@@ -11,3 +11,17 @@
   height: 130px;
   background-size: cover;
 }
+.time {
+  font-size: 22px;
+  font-weight: bolder;
+  margin-right: 8px;
+  font-family: "sans-serif";
+}
+
+.colon,
+.timeHms {
+  font-size: 42px;
+  font-weight: bolder;
+  margin-right: 8px;
+  font-family: "sans-serif";
+}

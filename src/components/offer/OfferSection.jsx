@@ -1,19 +1,21 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import styles from "./OfferSection.module.css";
 
 export default function OfferSection() {
-  const [time, setTime] = useState(new Date());
+  let [hour, setHour] = useState(new Date().getHours());
+  setInterval(() => {
+    setHour(new Date().getHours());
+  }, 1000);
 
-  useEffect(() => {
-    const interval =
-      (() => {
-        setTime(new Date());
-      },
-      1000);
-    return () => clearInterval(interval);
-  }, []);
+  let [minute, setMinute] = useState(new Date().getMinutes());
+  setInterval(() => {
+    setMinute(new Date().getMinutes());
+  }, 1000);
 
-  console.log(time.toLocaleTimeString());
+  let [second, setSecond] = useState(new Date().getSeconds());
+  setInterval(() => {
+    setSecond(new Date().getSeconds());
+  }, 1000);
 
   return (
     <>
@@ -25,10 +27,20 @@ export default function OfferSection() {
         </div>
 
         <div className="mx-4">
-          <div className={`${styles.offerImg} rounded-4`}>
-            <h1 className="text-white ms-5 ms-5">
-              {time.toLocaleTimeString()}
-            </h1>
+          <div
+            className={`${styles.offerImg} rounded-4 d-flex align-items-center justify-content-center text-white`}
+          >
+            <div>
+              <span className={`${styles.time}`}>Ending In </span>
+              <span className={`${styles.timeHms}`}>{hour}</span>
+              <span className={`${styles.time}`}>Hours</span>
+              <span className={`${styles.colon}`}>:</span>
+              <span className={`${styles.timeHms}`}>{minute}</span>
+              <span className={`${styles.time}`}>Mins</span>
+              <span className={`${styles.colon}`}>:</span>
+              <span className={`${styles.timeHms}`}>{second}</span>
+              <span className={`${styles.time}`}>Sec</span>
+            </div>
           </div>
         </div>
       </div>
