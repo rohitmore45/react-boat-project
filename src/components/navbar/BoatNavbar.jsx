@@ -5,7 +5,11 @@ import styles from "./BoatNavbar.module.css";
 export default function BoatNavbar() {
   return (
     <>
-      <nav className="navbar navbar-expand-lg bg-light navbar-light">
+      <nav
+        className="navbar navbar-expand-lg bg-white
+       position-fixed z-1 w-100 "
+        style={{ height: 82 }}
+      >
         <div className="container-fluid d-flex gap-5">
           <a className="navbar-brand" href="#">
             <img
@@ -13,7 +17,7 @@ export default function BoatNavbar() {
               alt="boat_logo"
               height={35}
               width={85}
-              className={styles.img}
+              className={`${styles.img} ms-4`}
             />
           </a>
           <button

@@ -1,0 +1,13 @@
+.title {
+  color: #1a2024;
+  font-size: 24px;
+  font-family: "sans-serif";
+}
+
+.spanBorder {
+  border-bottom: 2.5px solid rgb(185, 7, 7);
+}
+.chatIcon {
+  width: 45px;
+  height: 45px;
+}
