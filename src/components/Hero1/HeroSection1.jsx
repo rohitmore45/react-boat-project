@@ -18,7 +18,7 @@ export default function HeroSection1() {
       <div className={`container-fluid mt-4   `}>
         <div className={`mb-3 ms-3 ${styles.title}`}>
           <span>Explore </span>
-          <span className="fw-bolder">Bestselle</span>
+          <span className="fw-bold">Bestselle</span>
           <span className={` ${styles.spanBorder} fw-bold`}>rs</span>
         </div>
 

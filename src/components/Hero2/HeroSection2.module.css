@@ -1,0 +1,42 @@
+.img {
+  width: 335px;
+  height: 335px;
+  background-size: cover;
+}
+.cardStyle {
+  font-size: 15px;
+  font-weight: 700;
+  font-family: "sans-serif";
+}
+.cardPrice {
+  font-size: 17.5px;
+  color: #1a2024;
+  font-weight: 800;
+}
+.cardCurrPrice {
+  color: #b2b9bf;
+  font-size: 14px;
+}
+.cardDiscount {
+  color: #12b085;
+  font-size: 14px;
+  font-weight: 600;
+}
+.cardStars {
+  font-size: 13px;
+}
+.cardBtn {
+  margin-left: 70px;
+}
+.cardBody {
+  background-color: #fafafa;
+}
+.battery {
+  font-size: 13px;
+  background-color: #fcc50b;
+  font-weight: bold;
+  padding: 2px 0;
+  width: 80%;
+  left: 27px;
+  top: -23px;
+}
