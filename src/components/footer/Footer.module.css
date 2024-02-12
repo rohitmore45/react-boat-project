@@ -1,0 +1,20 @@
+.footerContainer {
+  height: 400px;
+  background-color: #e7f0f5;
+}
+.section1Email {
+  font-size: 24px;
+  color: #293036;
+  font-weight: 700;
+}
+.title {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.list {
+  font-size: 12.5px;
+}
+.list li {
+  margin-bottom: 12px;
+}

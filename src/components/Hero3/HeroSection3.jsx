@@ -14,7 +14,7 @@ export default function HeroSection3() {
     { img: img4, title: "For Work" },
     { img: img5, title: "For Audiophiles" },
   ];
-  
+
   return (
     <>
       <div className="container-fluid mt-5 w-100 ">
@@ -27,7 +27,7 @@ export default function HeroSection3() {
           {heroDetailes.map((hero, ind) => {
             return (
               <>
-                <div className={`${styles.heroCard} mb-5 text-center`}>
+                <div className={`${styles.heroCard} mb-4 text-center`}>
                   <div>
                     <img src={hero.img} className={`${styles.heroImg}`} />
                   </div>
