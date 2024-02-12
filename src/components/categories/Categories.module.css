@@ -1,0 +1,19 @@
+.title {
+  color: #1a2024;
+  font-size: 24px;
+  font-family: "sans-serif";
+}
+.spanBorder {
+  border-bottom: 2.5px solid rgb(185, 7, 7);
+}
+.categoryHeading {
+  font-size: 14px;
+  color: #1a2024;
+  font-weight: 700;
+  font-family: "sans-serif";
+}
+.categorySize {
+  width: 100px;
+  height: 150px;
+  cursor: pointer;
+}
