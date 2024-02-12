@@ -1,0 +1,31 @@
+.title {
+  color: #1a2024;
+  font-size: 24px;
+  font-family: "sans-serif";
+}
+.spanBorder {
+  border-bottom: 2.5px solid rgb(185, 7, 7);
+}
+.heroCard {
+  height: 500px;
+  width: 275px;
+}
+.heroImg {
+  width: 100%;
+}
+.heroTitle {
+  font-size: 24px;
+  color: #1a2024;
+  font-family: "sans-serif";
+  font-weight: 800;
+  height: 92px;
+  background-color: #eff4f7;
+  border-end-start-radius: 12px;
+  border-end-end-radius: 12px;
+}
+.heroLink {
+  color: #2f5b96 !important;
+  font-size: 14px !important;
+  font-weight: 800 !important;
+  text-decoration: none !important;
+}
