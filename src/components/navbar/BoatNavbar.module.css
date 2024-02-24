@@ -16,6 +16,10 @@
   font-size: 18px;
   background-color: #f4f5f7;
 }
-.bag{
+.bag {
   cursor: pointer;
+}
+
+.moreOptions {
+  font-size: 14px;
 }

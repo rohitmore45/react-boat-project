@@ -1,0 +1,27 @@
+.modalPara1 {
+  color: #131313;
+  font-size: 14px;
+}
+.secondDiv {
+  background: #eaf4f9;
+  padding: 15px;
+  border-radius: 5px;
+}
+.modalBtn {
+  padding: 10px 35px;
+  font-size: 16px;
+  margin-top: 20px;
+  border: none;
+  font-weight: bolder;
+  background: #d0d9de;
+  border-radius: 10px;
+}
+.modalPara2 {
+  font-size: 12px;
+  color: #878787;
+  margin-top: 15px;
+}
+input,
+label {
+  font-size: 14px;
+}

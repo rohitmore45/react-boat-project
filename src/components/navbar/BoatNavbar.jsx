@@ -2,9 +2,11 @@ import React, { useState } from "react";
 import logo from "../images/boat-logo.svg";
 import styles from "./BoatNavbar.module.css";
 import CategoryModal from "./CategoryModal";
+import LoginModal from "./LoginModal";
 
 export default function BoatNavbar() {
-  let [isHovering, setIsHovering] = useState(false);
+  const [isHovering, setIsHovering] = useState(false);
+  const [loginModalShow, setLoginModalShow] = React.useState(false);
   return (
     <>
       <nav
@@ -81,23 +83,41 @@ export default function BoatNavbar() {
                 >
                   More
                 </a>
+
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li>
+                  <li className={`${styles.moreOptions}`}>
                     <a className="dropdown-item" href="#">
-                      Action
+                      Daily Deals
                     </a>
                   </li>
-                  <li>
+                  <li className={`${styles.moreOptions}`}>
                     <a className="dropdown-item" href="#">
-                      Another action
+                      Do What FloAts Your BoAt
                     </a>
                   </li>
-                  <li>
-                    <hr className="dropdown-divider" />
-                  </li>
-                  <li>
+                  <li className={`${styles.moreOptions}`}>
                     <a className="dropdown-item" href="#">
-                      Something else here
+                      Blogs
+                    </a>
+                  </li>
+                  <li className={`${styles.moreOptions}`}>
+                    <a className="dropdown-item" href="#">
+                      Refer & Earn
+                    </a>
+                  </li>
+                  <li className={`${styles.moreOptions}`}>
+                    <a className="dropdown-item" href="#">
+                      Careers
+                    </a>
+                  </li>
+                  <li className={`${styles.moreOptions}`}>
+                    <a className="dropdown-item" href="#">
+                      Social Responsibility
+                    </a>
+                  </li>
+                  <li className={`${styles.moreOptions}`}>
+                    <a className="dropdown-item" href="#">
+                      Store Locator
                     </a>
                   </li>
                 </ul>
@@ -117,7 +137,16 @@ export default function BoatNavbar() {
                 </div>
               </form>
               <div className={`d-flex gap-3 ${styles.bag} mx-3`}>
-                <span className="bi bi-person"></span>
+                <span
+                  className="bi bi-person"
+                  onClick={() => {
+                    setLoginModalShow(true);
+                  }}
+                ></span>
+                <LoginModal
+                  show={loginModalShow}
+                  onHide={() => setLoginModalShow(false)}
+                />
                 <span className="bi bi-bag "></span>
               </div>
             </div>
