@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../images/boat-logo.svg";
 import styles from "./BoatNavbar.module.css";
+import CategoryModal from "./CategoryModal";
 
 export default function BoatNavbar() {
+  let [isHovering, setIsHovering] = useState(false);
   return (
     <>
       <nav
@@ -42,43 +44,22 @@ export default function BoatNavbar() {
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                   className={`nav-link dropdown-toggle ${styles.navbarLinks}`}
+                  onMouseEnter={() => setIsHovering(true)}
                 >
                   Categories
                 </a>
-                <ul
-                  className="dropdown-menu w-100"
-                  aria-labelledby="navbarDropdown"
-                >
-                  <li>
-                    <a
-                      className={`dropdown-item ${styles.navbarLinks}`}
-                      href="#"
-                    >
-                      Action
-                    </a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      Another action
-                    </a>
-                  </li>
-                  <li>
-                    <hr className="dropdown-divider" />
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      Something else here
-                    </a>
-                  </li>
-                </ul>
               </li>
-
+              {
+                <CategoryModal
+                  isHovering={isHovering}
+                  setIsHovering={setIsHovering}
+                />
+              }
               <li className="nav-item">
                 <a className={`nav-link ${styles.navbarLinks}`} href="#">
                   boAt Personalization
                 </a>
               </li>
-
               <li className="nav-item">
                 <a className={`nav-link ${styles.navbarLinks}`} href="#">
                   Gift with BoAt
@@ -89,7 +70,6 @@ export default function BoatNavbar() {
                   Corporate Orders
                 </a>
               </li>
-
               <li className="nav-item dropdown">
                 <a
                   className={`nav-link dropdown-toggle ${styles.navbarLinks}`}
